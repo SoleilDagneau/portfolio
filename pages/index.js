@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,108 +17,110 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
+        <Image className={styles.logo} src='/logo.png' width='200' height='100'/>
+        <div className={styles.topcont}> 
+        <div className={styles.titlecont}> 
+ <div className={styles.title1}>Hello, I'm Soleil</div> 
+        <div className={styles.title2}>a UX/UI Designer</div> 
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
+         
+        <Image className={styles.headshot} src='/headshot.png' width='180' height='180'/>
+        
         </div>
+        <div className={styles.line}></div>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+      <div className={styles.projectcont}> 
+      <div>
+        <div className={styles.projecttitle}> OHANA</div>
+        <div className={styles.projectdesc}> An accessible errand app</div>
+        <div className={styles.projectkey}> UX/UI Design</div>
+        <div className={styles.projectkey}> Graphic Design</div>
+        <div className={styles.projectkey}> Front-end Web Development</div>
+        <div className={styles.projectkey}> Project Management</div>
+        <div className={styles.projectkey}> Product Design</div>
+        <div className={styles.projectkey}> Mobile Design</div>
+        <div className={styles.projectkey}> Visual Design</div>
         </div>
+        <Image className={styles.picture} src='/ohanatutorial.jpg' width='400' height='500'/>
+        
+        <Image className={styles.arrow} src='/arrow-right.svg' width='100' height='100'/>
+
+      </div>
+      <div className={styles.line}></div>
+      <div className={styles.projectcont}> 
+      <div className={styles.projectitems}> 
+
+        <div className={styles.projecttitle}> LocalScoop</div>
+        <div className={styles.projectdesc1}> A marketplace app for small businesses</div>
+        <div className={styles.projectkey}> UX/UI Design</div>
+        <div className={styles.projectkey}> Graphic Design</div>
+        <div className={styles.projectkey}> Product Design</div>
+        <div className={styles.projectkey}> Mobile Design</div>
+        <div className={styles.projectkey}> Visual Design</div>
+      </div>
+      <Image className={styles.picture} src='/localscoop.jpg' width='600' height='450'/>
+        
+        <Image className={styles.arrow} src='/arrow-right.svg' width='100' height='100'/>
+
+      </div>
+      <div className={styles.line}></div>
+      <div className={styles.projectcont}> 
+      <div>
+        <div className={styles.projecttitle}> Beach House Brewing</div>
+        <div className={styles.projectdesc1}> Craft brewery can designs</div>
+        <div className={styles.projectkey}> UX/UI Design</div>
+        <div className={styles.projectkey}> Graphic Design</div>
+        <div className={styles.projectkey}> Visual Design</div>
+        </div>
+        <Image className={styles.picture} src='/cans.png' width='600' height='400'/>
+        
+        <Image className={styles.arrow} src='/arrow-right.svg' width='100' height='100'/>
+
+      </div>
+      <div className={styles.line}></div>
+      <div className={styles.projectcont}> 
+      <div>
+<div className={styles.projecttitle}> The 70's in Retrospect</div>
+        <div className={styles.projectdesc}> Magazine</div>
+        <div className={styles.projectkey}> UX/UI Design</div>
+        <div className={styles.projectkey}> Graphic Design</div>
+        <div className={styles.projectkey}> Visual Design</div>
+        </div>
+        <Image className={styles.picture} src='/magazine.png' width='600' height='500'/>
+
+        <Image className={styles.arrow} src='/arrow-right.svg' width='100' height='100'/>
+
+      </div>
+      <div className={styles.line}></div>
+
+      <div className={styles.connect}> Let's connect</div>
+      <div className={styles.connectdesc}> currently seeking an opportunity in Digital Design, UX/UI Design, and Graphic Design</div>
+      
+      <div className={styles.socialcont}> 
+        <div className={styles.line1}></div>
+        <div className={styles.socialcont1}> 
+<div className={styles.social}> Email </div>
+      <Image className={styles.arrow1} src='/arrow-right.svg' width='50' height='50'/>
+        </div>
+ <div className={styles.line1}></div>
+        <div className={styles.socialcont1}> 
+ <div className={styles.social}> LinkedIn </div>
+      <Image className={styles.arrow1} src='/arrow-right.svg' width='50' height='50'/>
+        </div>
+ <div className={styles.line1}></div>
+        <div className={styles.socialcont1}> 
+<div className={styles.social}> Instagram </div>
+      <Image className={styles.arrow1} src='/arrow-right.svg' width='50' height='50'/>
+        </div>
+      
+     
+     
+     
+      
+      </div>
+
+   
+      
       </main>
     </>
   )
