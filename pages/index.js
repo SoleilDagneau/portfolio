@@ -2,12 +2,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { useRouter } from 'next/router';
+
 
 
 
 const inter = Inter({ subsets: ['latin'] })
 
+
+
 export default function Home() {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -31,7 +36,8 @@ export default function Home() {
 
       <div className={styles.projectcont}> 
       <div>
-        <div className={styles.projecttitle}> OHANA</div>
+        <div className={styles.projecttitle} 
+        onClick={() => router.push('/ohana')}> OHANA</div>
         <div className={styles.projectdesc}> An accessible errand app</div>
         <div className={styles.projectkey}> UX/UI Design</div>
         <div className={styles.projectkey}> Graphic Design</div>
@@ -41,9 +47,13 @@ export default function Home() {
         <div className={styles.projectkey}> Mobile Design</div>
         <div className={styles.projectkey}> Visual Design</div>
         </div>
-        <Image className={styles.picture} src='/ohanatutorial.jpg' width='400' height='500'/>
+        <Image className={styles.picture} 
+         onClick={() => router.push('/ohana')}
+        src='/ohanatutorial.jpg' width='400' height='500'/>
         
-        <Image className={styles.arrow} src='/arrow-right.svg' width='100' height='100'/>
+        <Image className={styles.arrow} 
+         onClick={() => router.push('/ohana')}
+        src='/arrow-right.svg' width='100' height='100'/>
 
       </div>
       <div className={styles.line}></div>
