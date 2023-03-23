@@ -113,14 +113,14 @@ export default function Home() {
         <Image className={styles.fontimg} src='/fonts.png' width='500' height='500' />
 
         <div className={styles.colortitle1}> INTERACTIVE ELEMENTS</div>
-        <div className={styles.colortitle1}> BUTTONS</div>
+        <div className={styles.colortitle2}> BUTTONS</div>
         <Image className={styles.fontimg} src='/buttons.png' width='550' height='300' />
 
-        <div className={styles.colortitle1}> TABS</div>
+        <div className={styles.colortitle2}> TABS</div>
         <Image className={styles.fontimg} src='/tabactive.png' width='300' height='200' />
        
         
-        <div className={styles.colortitle1}> TOOLTIPS</div>
+        <div className={styles.colortitle2}> TOOLTIPS</div>
         <Image className={styles.fontimg} src='/tooltip.png' width='300' height='220' />
 
         <div className={styles.num}>04</div>  
