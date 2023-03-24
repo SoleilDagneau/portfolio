@@ -86,7 +86,8 @@ export default function Home() {
         <div className={styles.title4}> The Design </div>
 
         <div className={styles.desc1}> 
-        Before designing high-fidelity prototypes, we built a styleguide to ensure that multiple designers are able to design the app in a clear and united way. It helped mirror the corporate style and ensures consistency with everything from design to writing.
+        Before designing high-fidelity prototypes, we built a styleguide to ensure
+         that multiple designers are able to design the app in a clear and united way. 
         </div>
 
         <div className={styles.colortitle}> COLORS</div>
@@ -129,7 +130,7 @@ export default function Home() {
         <div className={styles.desc1}> With the result of the user testing and the style guide, 
             we built our high-fidelity prototypes and made sure the overall 
             user experience is intuitive. The final prototype shows a complete 
-            idea of ​​how the Reshare app will look like in the final result.</div>
+            idea of ​​how the Ohana app will look like in the final result.</div>
 
 <div  className={styles.vidcont} >
      <video className={styles.vid} src="/ohanavid.mp4" controls width={640} height={360} />
