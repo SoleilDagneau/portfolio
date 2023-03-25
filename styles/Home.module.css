@@ -494,3 +494,58 @@
   padding-right: 90px;
   padding-top: 200px;
 }
+
+.nav {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding-right: 15px;
+  font-weight: 1000;
+}
+
+.nav:hover {
+  text-decoration: underline;
+}
+
+.navcont{
+  position: absolute;
+  top:35px;
+  right:35px;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding-top: 20px;;
+}
+
+.smalltitle1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding-top: 5px;;
+}
+.smalltitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.line2 {
+  height: 1px;
+  background-color: #000;
+  border: none;
+  margin: 20px 0;
+  width: 600px;
+}
+
+.rotate {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

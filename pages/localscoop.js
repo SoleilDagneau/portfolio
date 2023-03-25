@@ -6,12 +6,8 @@ import Nav from '@/components/nav'
 import { useRouter } from 'next/router';
 
 
-
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
-  const router = useRouter();
+    const router = useRouter();
   return (
     <>
       <Head>
@@ -25,7 +21,7 @@ export default function Home() {
         <Nav/>
 
         <div className={styles.titlecont1}>
-            <div className={styles.projecttitle}> OHANA</div>
+            <div className={styles.projecttitle}> LocalScoop</div>
         <div className={styles.projectlongdesc}>  Ohana is an errand app made for people with accessibility issues. It aids this group with completing their tasks easier and more efficiently through the help of people they trust.</div>
        
         </div>

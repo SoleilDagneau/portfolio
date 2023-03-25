@@ -3,7 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useRouter } from 'next/router';
-
+import Link from 'next/link';
+import Nav from '@/components/nav';
 
 
 
@@ -22,10 +23,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Image className={styles.logo} src='/logo.png' width='200' height='100'/>
+        <Image className={styles.logo} onClick={() => router.push('/')} src='/logo.png' width='200' height='100'/>
+        <Nav/>
         <div className={styles.topcont}> 
         <div className={styles.titlecont}> 
- <div className={styles.title1}>Hello, I'm Soleil</div> 
+ <Link href='/about' className={styles.title1}>Hello, I'm Soleil</Link> 
         <div className={styles.title2}>a UX/UI Designer</div> 
         </div>
          
@@ -60,7 +62,7 @@ export default function Home() {
       <div className={styles.projectcont}> 
       <div className={styles.projectitems}> 
 
-        <div className={styles.projecttitle}> LocalScoop</div>
+        <div className={styles.projecttitle} onClick={() => router.push('/localscoop')}> LocalScoop</div>
         <div className={styles.projectdesc1}> A marketplace app for small businesses</div>
         <div className={styles.projectkey}> UX/UI Design</div>
         <div className={styles.projectkey}> Graphic Design</div>
@@ -68,9 +70,9 @@ export default function Home() {
         <div className={styles.projectkey}> Mobile Design</div>
         <div className={styles.projectkey}> Visual Design</div>
       </div>
-      <Image className={styles.picture} src='/localscoop.jpg' width='600' height='450'/>
+      <Image className={styles.picture} onClick={() => router.push('/localscoop')} src='/localscoop.jpg' width='600' height='450'/>
         
-        <Image className={styles.arrow} src='/arrow-right.svg' width='100' height='100'/>
+        <Image className={styles.arrow} onClick={() => router.push('/localscoop')} src='/arrow-right.svg' width='100' height='100'/>
 
       </div>
       <div className={styles.line}></div>
@@ -109,17 +111,20 @@ export default function Home() {
       <div className={styles.socialcont}> 
         <div className={styles.line1}></div>
         <div className={styles.socialcont1}> 
-<div className={styles.social}> Email </div>
+
+<Link  className={styles.social} href="mailto:sndagneau@gmail.com"> Email </Link>
       <Image className={styles.arrow1} src='/arrow-right.svg' width='50' height='50'/>
         </div>
  <div className={styles.line1}></div>
         <div className={styles.socialcont1}> 
- <div className={styles.social}> LinkedIn </div>
+        
+
+ <Link className={styles.social} href='https://www.linkedin.com/in/soleildagneau' target="_blank" rel="noopener noreferrer"> LinkedIn </Link>
       <Image className={styles.arrow1} src='/arrow-right.svg' width='50' height='50'/>
         </div>
  <div className={styles.line1}></div>
         <div className={styles.socialcont1}> 
-<div className={styles.social}> Instagram </div>
+<Link className={styles.social} href='https://www.instagram.com/notsoleil/' target="_blank" rel="noopener noreferrer"> Instagram </Link>
       <Image className={styles.arrow1} src='/arrow-right.svg' width='50' height='50'/>
         </div>
       
