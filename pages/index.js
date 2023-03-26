@@ -51,7 +51,7 @@ export default function Home() {
         </div>
         <Image className={styles.picture} 
          onClick={() => router.push('/ohana')}
-        src='/ohanatutorial.jpg' width='400' height='500'/>
+        src='/ohanamock.png' width='600' height='500'/>
         
         <Image className={styles.arrow} 
          onClick={() => router.push('/ohana')}
@@ -70,7 +70,7 @@ export default function Home() {
         <div className={styles.projectkey}> Mobile Design</div>
         <div className={styles.projectkey}> Visual Design</div>
       </div>
-      <Image className={styles.picture} onClick={() => router.push('/localscoop')} src='/localscoop.jpg' width='600' height='450'/>
+      <Image className={styles.picture} onClick={() => router.push('/localscoop')} src='/localscoopmock.jpg' width='600' height='450'/>
         
         <Image className={styles.arrow} onClick={() => router.push('/localscoop')} src='/arrow-right.svg' width='100' height='100'/>
 
@@ -78,29 +78,29 @@ export default function Home() {
       <div className={styles.line}></div>
       <div className={styles.projectcont}> 
       <div>
-        <div className={styles.projecttitle}> Beach House Brewing</div>
+        <div className={styles.projecttitle} onClick={() => router.push('/beachhousebrewing')}> Beach House Brewing</div>
         <div className={styles.projectdesc1}> Craft brewery can designs</div>
         <div className={styles.projectkey}> UX/UI Design</div>
         <div className={styles.projectkey}> Graphic Design</div>
         <div className={styles.projectkey}> Visual Design</div>
         </div>
-        <Image className={styles.picture} src='/cans.png' width='600' height='400'/>
+        <Image className={styles.picture} onClick={() => router.push('/beachhousebrewing')} src='/canmock.png' width='600' height='400'/>
         
-        <Image className={styles.arrow} src='/arrow-right.svg' width='100' height='100'/>
+        <Image className={styles.arrow} onClick={() => router.push('/beachhousebrewing')} src='/arrow-right.svg' width='100' height='100'/>
 
       </div>
       <div className={styles.line}></div>
       <div className={styles.projectcont}> 
       <div>
-<div className={styles.projecttitle}> The 70's in Retrospect</div>
+<div className={styles.projecttitle} onClick={() => router.push('/magazine')}> The 70's in Retrospect</div>
         <div className={styles.projectdesc}> Magazine</div>
         <div className={styles.projectkey}> UX/UI Design</div>
         <div className={styles.projectkey}> Graphic Design</div>
         <div className={styles.projectkey}> Visual Design</div>
         </div>
-        <Image className={styles.picture} src='/magazine.png' width='600' height='500'/>
+        <Image className={styles.picture} onClick={() => router.push('/magazine')} src='/magazine.png' width='600' height='500'/>
 
-        <Image className={styles.arrow} src='/arrow-right.svg' width='100' height='100'/>
+        <Image className={styles.arrow} onClick={() => router.push('/magazine')} src='/arrow-right.svg' width='100' height='100'/>
 
       </div>
       <div className={styles.line}></div>

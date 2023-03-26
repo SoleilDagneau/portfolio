@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className={styles.titlecont1}>
             <div className={styles.projecttitle}> LocalScoop</div>
-        <div className={styles.projectlongdesc}>  Ohana is an errand app made for people with accessibility issues. It aids this group with completing their tasks easier and more efficiently through the help of people they trust.</div>
+        <div className={styles.projectlongdesc}>LocalScoop is a marketplace app for small local businesses. There are two sides to the app, one for the small business and one for the consumers. The business side of the app allows small businesses to set up a shop profile and sell their products directly to local consumers. The consumer side of the app allows users to discover small businesses local to them and purchase products directly from the business. </div>
        
         </div>
          <div className={styles.line}></div>
@@ -32,20 +32,22 @@ export default function Home() {
                 </div>
                 
                 <div className={styles.itemcont}> 
-                    <div> Tools </div>  <div className={styles.info}> Figma, Photoshop, InDesign, Illustrator </div>
+                    <div> Tools </div>  <div className={styles.info}> Figma, Photoshop, Illustrator </div>
                 </div>
                 <div className={styles.itemcont}> 
-                    <div> Project Types </div>  <div className={styles.info}> Product Design, Mobile Design, Visual Design, Development (Front-end) </div>
+                    <div> Project Types </div>  <div className={styles.info}> Product Design, Mobile Design, Visual Design, UX/UI Design</div>
                 </div>
                 <div className={styles.itemcont}> 
-                    <div> Roles </div>  <div className={styles.info}> Project Manager, UX/UI Designer, Graphic Designer, Front-end Developer </div>
+                    <div> Roles </div>  <div className={styles.info}> UX/UI Designer, Graphic Designer </div>
                 </div>
             </div>
-        <Image className={styles.picture} src='/ohanatutorial.jpg' width='800' height='900'/>
+        <Image className={styles.mainpicture} src='/localscoopmock.jpg' width='800' height='600'/>
         <div className={styles.num}>01</div>
         <div className={styles.title3}> The Problem</div>
         
-        <div className={styles.desc1}> Almost 1 in 4 Canadians reported having a physical disability or mobility challenges. Through more user research, we found that people with accessibility issues feel an overwhelming amount of guilt asking for help. Primary caregivers, such as spouses or parents, also reported feeling burnt out – but too guilty to express this.</div>
+        <div className={styles.desc1}> 
+        At the tail-end of the pandemic, small businesses in the greater Vancouver area were still recovering financially. Nearly 16% of small businesses in Canada. Roughly 100,000 business in Canada closed due to the pandemic, and the ones that are still running struggle with costs and demand.
+         </div>
 
         
         <div className={styles.num3}>02</div>  
@@ -54,27 +56,24 @@ export default function Home() {
      
       
         <div className={styles.desc1}> 
-        Ohana aims to reduce caregiver burnout 
-        and the guilt that those with mobility issues 
-        feel by providing an encouraging platform to connect those 
-        in need with those who are looking to help.
+        LocalScoop aims to connect local buyers with small businesses in their area to promote growth and awareness.
         <br></br>
-        <div className={styles.infotitle}> TRUST </div>
+        <div className={styles.infotitle}> TRENDING </div>
         <br></br>
         <div className={styles.info2}>
-                    Those in need can invite members of their family, friends, neighbours or anyone they trust to the app. It is in their control.
+        The home page highlights trending shops to put them in the spotlight and encourage users to check them out
          </div>
          <br></br>
-        <div className={styles.infotitle}> COMMUNITY</div>
+        <div className={styles.infotitle}> ETHICAL </div>
         <br></br>
         <div className={styles.info2}>
-        A sense of community is created through both sides of the app – those in need and those who are willing to help.
+        Small businesses are much better for the environment and economy. Users can chose from ethical companies near them
          </div>
          <br></br>
-        <div className={styles.infotitle}> MUTUAL BENEFIT</div>
+        <div className={styles.infotitle}> OPPORTUNITY</div>
         <br></br>
         <div className={styles.info2}>
-        Reduces guilt of user in need and caregivers feel less burnt out without being solely relied on
+        Entrepreneurs can use this app as an opportunity to start up their small business and get their brand out there
          </div>
 
 
@@ -93,11 +92,9 @@ export default function Home() {
         <div className={styles.colortitle}> COLORS</div>
 
         <div className={styles.colorcont}>  
- <div className={styles.color1}>#126B8A</div>
- <div className={styles.color2}>#00ADC3</div>
- <div className={styles.color3}>#EDC81B</div>
- <div className={styles.color4}>#DC2228</div>
- <div className={styles.color5}>#4FCD92</div>
+ <div className={styles.color11}>#E3974F</div>
+ <div className={styles.color12}>#D4E6B5</div>
+ <div className={styles.color13}>#F7F7F3</div>
         </div>
 
         <div className={styles.colortitle1}> NEUTRALS</div>
@@ -111,29 +108,57 @@ export default function Home() {
        
        
         <div className={styles.colortitle1}> TYPOGRAPHY</div>
-        <Image className={styles.fontimg} src='/fonts.png' width='500' height='500' />
+        <Image className={styles.fontimg} src='/LSfonts.png' width='500' height='500' />
 
         <div className={styles.colortitle1}> INTERACTIVE ELEMENTS</div>
         <div className={styles.colortitle2}> BUTTONS</div>
-        <Image className={styles.fontimg} src='/buttons.png' width='550' height='300' />
+        <Image className={styles.fontimg} src='/LSbuttons.png' width='550' height='300' />
 
         <div className={styles.colortitle2}> TABS</div>
-        <Image className={styles.fontimg} src='/tabactive.png' width='300' height='200' />
+        <Image className={styles.fontimg} src='/LStabs.png' width='300' height='200' />
        
         
-        <div className={styles.colortitle2}> TOOLTIPS</div>
-        <Image className={styles.fontimg} src='/tooltip.png' width='300' height='220' />
+        <div className={styles.colortitle2}> FILTERS</div>
+        <Image className={styles.fontimg} src='/LSfilters.png' width='500' height='180' />
 
+        <div className={styles.colortitle1}> IMAGES </div>
+
+        <div className={styles.imagegrid}>
+        <Image className={styles.fontimg1} src='/LocalScooppics/2.png' width='263' height='394' />
+        <Image className={styles.fontimg1} src='/LocalScooppics/4.png' width='243' height='282' />
+<Image className={styles.fontimg1} src='/LocalScooppics/6.png' width='243' height='365' />
+        <Image className={styles.fontimg1} src='/LocalScooppics/7.png' width='263' height='376' />
+
+            <Image className={styles.fontimg} src='/LocalScooppics/1.png' width='476' height='476' />
+        
+        <Image className={styles.fontimg1} src='/LocalScooppics/3.png' width='472' height='318' />
+       
+        <Image className={styles.fontimg1} src='/LocalScooppics/5.png' width='370' height='232' />
+        
+        <Image className={styles.fontimg1} src='/LocalScooppics/8.png' width='476' height='317' />
+        <Image className={styles.fontimg1} src='/LocalScooppics/9.png' width='476' height='317' />
+        <Image className={styles.fontimg1} src='/LocalScooppics/10.png' width='243' height='253' />
+
+             </div>
+        
+        <div className={styles.colortitle1}> LOGO DESIGN </div>
+        <div className={styles.logodesigncont}>
+            <Image className={styles.fontimg} src='/LocalScooplogo/LSwordmark.png' width='500' height='220' />
+        <Image className={styles.fontimg} src='/LocalScooplogo/LSlogo.png' width='320' height='380' />
+        <Image className={styles.fontimg} src='/LocalScooplogo/LSlogo1.png' width='320' height='380' />
+
+        </div>
+        
         <div className={styles.num}>04</div>  
         <div className={styles.title4}> Final Design </div>
         <div className={styles.colortitle1}> HIGH FIDELITY PROTOTYPE</div>
         <div className={styles.desc1}> With the result of the user testing and the style guide, 
             we built our high-fidelity prototypes and made sure the overall 
             user experience is intuitive. The final prototype shows a complete 
-            idea of ​​how the Ohana app will look like in the final result.</div>
+            idea of ​​how the LocalScoop app will look like in the final result.</div>
 
 <div  className={styles.vidcont} >
-     <video className={styles.vid} src="/ohanavid.mp4" controls width={640} height={360} />
+     <video className={styles.vid} src="/localscoop.mp4" controls width={640} height={360} />
 
       
     </div>

@@ -45,7 +45,7 @@ export default function Home() {
                     <div> Roles </div>  <div className={styles.info}> Project Manager, UX/UI Designer, Graphic Designer, Front-end Developer </div>
                 </div>
             </div>
-        <Image className={styles.picture} src='/ohanatutorial.jpg' width='800' height='900'/>
+        <Image className={styles.picture} src='/ohanamock.png' width='900' height='750'/>
         <div className={styles.num}>01</div>
         <div className={styles.title3}> The Problem</div>
         
